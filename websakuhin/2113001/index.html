@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aragosi.com</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- BXSLIDER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <!-- lightbox CSS -->
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <!-- BXSLIDER JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+      .bx-wrapper {
+        box-shadow: none;
+        border: none;
+      }
+    </style>
+
+  </head>
+  <body id="top">
+
+      <header class="header">
+        <!-- ヘッダーロゴ -->
+        <div class="logo">
+          <img src="images/aragoshi.png" width="70px" alt="">
+        </div>
+
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer_input" class="drawer_open"><span></span></label>
+
+          <!-- メニュー -->
+          <nav class="nav_content">
+            <ul class="nav_list">
+              <li class="nav_item"><a href="index.html">TOP</a></li>
+              <li class="nav_item"><a href="about.html">概要</a></li>
+              <li class="nav_item"><a href="lineup.html">商品一覧</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main class="main">
+
+          <div class="main-visual">
+            <ul class="bxslider">
+              <li>
+                <img src="images/mikan_hed.png" alt="メイン画像" />
+              </li>
+              <li>
+                <img src="images/momo_hed.png" alt="メイン画像" />
+              </li>
+              <li>
+                <img src="images/ringo_hed.png" alt="メイン画像" />
+              </li>
+              <li>
+                <img src="images/ume_hed.png" alt="メイン画像" />
+              </li>
+              <li>
+                <img src="images/lemon_hed.png" alt="メイン画像" />
+              </li>
+              <li>
+                <img src="images/zinzya_hed.png" alt="メイン画像" />
+              </li>
+              <li>
+                <img src="images/pain_hed.png" alt="メイン画像" />
+              </li>
+            </ul>
+
+
+          </div>
+
+        </ul>
+      </div>
+
+      <div class="otona">
+        <h2 class="otona_title"><span>まるで果物そのものを味わっているかのような、大人の飲み物。<span></h2>
+        <p class="otona_text">
+          お酒が好きな人は、 単なるフルーツ味のお酒との違いを堪能するのも良し。<br>
+          お酒がちょっと苦手な人は、 本物のフルーツを味わう感覚でたのしむのも良し。<br>
+          果実の濃厚な味わいと果肉感のとろみが、 1日のご褒美として、疲れを忘れさせてくれる。<br>
+          最後のシメとして、ゆっくりふんだんに味わえちゃう。<br>
+          酒蔵として梅乃宿が130年培ってきた技術で、 クセになる、ニンマリする<br>
+          大人の贅沢なたのしみを こだわり抜いた果物を素材に、自由につくりあげました。<br>
+        </p>
+      </div>
+
+      <div>
+        <figure class=""><img src="images/image_set_pc.jpeg" alt=""></figure>
+      </div>
+
+      <div class="news">
+        <h2><ruby>新着情報<rt>NEWS</rt></ruby></h2>
+        <dl class="news_text">
+          <dt>2023/1/1</dt>
+          <dd>新年を彩る、とびきりお得な新春企画。#ワクワク新春祭</dd>
+          <dt>2022/12/15</dt>
+          <dd>クリスマスに、あらごしと聖夜に乾杯。#クリスマスセール</dd>
+          </dl>
+
+      </div>
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="">
+        <img src="images/aragoshi_f.png" alt="" />
+      </div>
+      <p class="footer__txt">&copy;2023@グエンレイプーハオ</p>
+      <p class="footer__link"><a href="#top">▲TOPへ</a></p>
+    </footer>
+
+    <script>
+      $(".bxslider").bxSlider({
+        auto: true,
+        autoControls: false,
+        stopAutoOnClick: true,
+        pager: true,
+      });
+    </script>
+    <script>
+      $(function(){
+  // #で始まるリンクをクリックした場合
+  $('a[href^="#"]').click(function() {
+    // スクロールの速度
+    let speed = 50;
+    // スクロールタイプ
+    let type = 'linear';
+    // href属性の取得
+    let href= $(this).attr("href");
+    // 移動先の取得（hrefが#indexならトップ$(html)に、）
+    let target = $(href == "#index" ? 'html' : href);
+    // 移動先のポジション取得
+    let position = target.offset().top;
+    // animateでスムーススクロール
+    $('body,html').animate({scrollTop:position}, speed, type);
+    return false;
+  });
+});
+    </script>
+    <script src="js/lightbox.js"></script>
+
+    <div class="start">
+      <p><img src="images/aragoshi.png" alt=""></p>
+  </div>
+
+  </body>
+</html>
