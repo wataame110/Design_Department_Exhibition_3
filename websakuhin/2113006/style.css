@@ -159,7 +159,7 @@ body{
 
 .mv{
 	background: #00DBF0;
-	background-image: url(./背景/bg_sp.jpg);
+	background-image: url(./background/bg_sp.jpg);
 	background-size: cover;
 	background-position: bottom;
 	
@@ -174,7 +174,7 @@ body{
 }
 
 .formation{
-	background-image: url(./背景/bg_pc.jpg);
+	background-image: url(./background/bg_pc.jpg);
 	padding-bottom: 1.5em;
 }
 
@@ -203,7 +203,7 @@ body{
 }
 
 .logo_back{
-	background-image: url(./背景/bg_night.jpg);
+	background-image: url(./background/bg_night.jpg);
 }
 
 .logo{
