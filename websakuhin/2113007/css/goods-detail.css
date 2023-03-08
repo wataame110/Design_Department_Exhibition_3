@@ -1,0 +1,78 @@
+.detail-container {
+    /* border: 1px solid red; */
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 2.5vw;
+    display: flex;
+    padding: 7.5vw;
+}
+
+.detail-img {
+    width: 40vw;
+}
+
+.detail-img img {
+    width: 40vw;
+}
+
+.detail-right {
+    width: 40vw;
+    height: 40vw;
+    padding: 5vw;
+}
+
+.detail-name {
+    text-align: end;
+    font-size: 4vw;
+    letter-spacing: 0.8vw;
+}
+
+.detail-price {
+    text-align: end;
+    font-size: 2vw;
+    letter-spacing: 0.32vw;
+    margin-top: 2.2vw;
+}
+
+.detail-button {
+    text-align: end;
+    margin-top: 5vw;
+}
+
+.detail-button a {
+    text-decoration: none;
+    font-size: 1.3vw;
+    letter-spacing: 0.13vw;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3vw;
+    padding: 1.1vw 2.4vw;
+    border: 0.1vw solid #000;
+    transition: all 0.2s;
+}
+
+.detail-button a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.detail-text {
+    font-size: 1vw;
+    letter-spacing: 0.24vw;
+    margin-top: 8vw;
+    position: relative;
+}
+
+.detail-text::before {
+    content: "";
+    position: absolute;
+    width: 30vw;
+    height: 0.1vw;
+    background-color: #000;
+    top: -2.7vw;
+    left: 0;
+}
+
+footer {
+    padding-top: 0;
+}

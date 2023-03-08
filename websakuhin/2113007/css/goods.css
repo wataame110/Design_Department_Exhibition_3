@@ -1,0 +1,63 @@
+.goods-container {
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 2.5vw;
+    background-color: #b4b4b4;
+    position: relative;
+    padding: 7.5vw 0 7.5vw 0;
+}
+
+.goods-title-en {
+    color: #fff;
+    font-size: 13vw;
+    letter-spacing: 2.6vw;
+    position: absolute;
+    top: -4vw;
+    left: -1vw;
+}
+
+.goods-list {
+    display: flex;
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.goods-list:not(:last-of-type) {
+    margin-bottom: 5vw;
+}
+
+.goods-list-item a {
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.goods-list-item a:hover {
+    opacity: 0.3;
+}
+
+
+.goods-list-item-image {}
+
+.goods-list-item-image img {
+    width: 15vw;
+}
+
+.goods-list-item-name {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
+    letter-spacing: 0.4vw;
+    margin-top: 1.6vw;
+}
+
+.goods-list-item-price {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1vw;
+    letter-spacing: 0.2vw;
+    margin-top: 0;
+}
